@@ -1,0 +1,370 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #FFFDFD;
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #222;
+  border-radius: 0;
+  border: 0;
+  border-top: solid black;
+  border-bottom: solid black;
+
+}
+
+#logo-img {
+  background: url('../images/Kettlebell_Barcelona.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 50px 15px 15px 0;
+}
+
+.navbar-brand {
+  padding-top: 60px;
+}
+
+.navbar-brand h1 { /* KB name */
+  /*font-family: 'Lora', serif;*/
+  color: #e6af2e;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Primer y unico... */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Logo a primer y unico... */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+  clear: rigth;
+}
+#nav-list a {
+  color: #e6af2e;
+  text-align: center;
+  text-shadow: 1px 1px 1px #222;
+}
+#nav-list a:hover {
+  background: #0F0E0C;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  font-size: 0.8em;
+  border: solid #e6af2e;
+  /*Box Position*/
+  position: relative;
+  margin-right: right;
+  margin-left: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#phone div { /* Sesion Gratis */
+  color: #fff;
+  text-align: center;
+
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+/* HOME PAGE */
+
+#studio-tile, #team-tile, #products-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#studio-tile:hover, #team-tile:hover, #products-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#studio-tile {
+  background: url('../images/studio-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#team-tile {
+  background: url('../images/team-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#products-tile {
+  background: url('../images/products-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#studio-tile span, #team-tile span, #products-tile span {
+  position: absolute; /*Span en posicio absoluta dins de la seva referencia
+(XXX-tile)*/
+  /*Per colocar al centre*/  
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /*Configurar el text*/
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* FOOTER */
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  text-align: center;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#contact > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#opinions {
+  line-height: 5.5;
+  
+  
+
+}
+#google_opinions,#add_opinion{
+  color: #e6af2e;
+  width: 250px;
+  height: 50px;
+  margin: 0px 15px 15px 0;
+
+
+  font-size: 15px;
+  border: solid #e6af2e;
+  /*Box Position*/
+  position: relative;
+  margin-right: right;
+  margin-left: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+#google_opinions:hover ,#add_opinion:hover  {
+  background: #0F0E0C;
+
+}
+
+#contact_phone, #contact_mail{
+  color: #fff;
+  width: 115px;
+  height: 50px;
+  border: solid #fff;
+  text-transform: uppercase;
+  margin: 15px 15px 5px 0;
+  /*Box Position*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+svg {
+  display:inline-block;  
+  color: #fff;
+  margin: 15px 15px 0px 0;
+}
+
+svg:hover, #contact_phone:hover, #contact_mail:hover {
+
+  background-color: #0F0E0C;
+}
+
+
+
+
+
+
+}
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/Kettlebell_Barcelona_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 55px 5px 25px 0;
+
+  }
+  /* End Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  li.second_row{
+    clear: right;
+    position: relative;
+    left: 300px;
+    text-align: right;
+  }
+  li.first_row{
+    position: relative;
+    left: -330px;
+
+  }
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+#nav-list {
+  margin-top: 80px;
+  clear: left;
+  }
+li.second_row{
+  clear: right;
+  position: relative;
+  left: 260px;
+  text-align: right;
+}
+li.first_row{
+  position: relative;
+  left: -370px;
+}
+
+/* Home Page */
+
+/*Per poder ajustar el Box a la mida de la imatge quan es redueix la pantalla*/
+#menu-tile, #specials-tile {
+  width: 360px;
+  margin: 0 auto 15px; /*Centrar la imatge*/
+}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 10px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 20px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
