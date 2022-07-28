@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
 
     function test(output) {
-      import { exportFile, CSV_FILE } from 'fs-browsers';
+      import {exportFile, CSV_FILE } from 'fs-browsers';
       // const data = [{ "id": 5, "name": "John", "grade": 90, "age": 15 }, { "id": 7, "name": "Nick", "grade": 70, "age": 17 }];
       const headings = ["City", "Canton", "ZIP"];
       exportFile(output, { type: CSV_FILE, headings: headings, fileName: 'grades.csv' });
